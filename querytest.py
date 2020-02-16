@@ -26,8 +26,6 @@ if __name__ == '__main__':
     dynamodb = boto3.resource('dynamodb')
     table = dynamodb.Table(TABLE)
 
-    # create table with index
-
     # read data in from CSV
     items = []
     with open(CSV_FILE) as csvfile:
